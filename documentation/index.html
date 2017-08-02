@@ -1,0 +1,330 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>SMS Notification for WooCommerce</title>
+	
+	<meta name="description" content="WooCommerce has new extension which will SMS from Order. SMS Notification for WooCommerce is just another wordpress plugin which you can install and manage just like other wordpress plugins.
+
+SMS Notification for WooCommerce plugin integrates your order notification and SMS into a single process. You can also SMS to admin immediatly after Order submission and udation." />
+	<meta name="keywords" content="SMS Notification for WooCommerce, Send SMS With WooCommerce, wordpress SMS sendor addon, WooCommerce Extension, WooCommerce Add-on" />
+	<meta name="author" content="Repute Infosystems">
+	<meta name="copyright" content="Repute Infosystems">
+	<meta name="date" content="2016-12-02">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		img{ border:2px solid #EDEDED !important; border-radius:5px; }
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-paypal-for-WooCommerce">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#key_features" title="Key Features">Key Features</a></li>
+            <li><a href="#requirements" title="Requirements">Requirements</a></li>
+			<li><a href="#installation_and_activation" title="Installation And Activation">Installation And Activation</a></li>
+			<li><a href="#sms_configuration" title="SMS Configuration">SMS Configuration</a></li>
+            <li><a href="#sms_gateways" title="SMS Gateways">SMS Gateways</a></li>
+            <li><a href="#twilio_configuration" title="Twilio Configuration">Twilio Configuration</a></li>
+            <li><a href="#clickatell_configuration" title="Clickatell Configuration">Clickatell Configuration</a></li>
+            <li><a href="#nexmo_configuration" title="Nexmo Configuration">Nexmo Configuration</a></li>
+         <!--   <li><a href="#smsglobal_configuration" title="SMSGlobal Configuration">SMSGlobal Configuration</a></li>-->
+            <li><a href="#view_sms_history" title="SMSGlobal Configuration">View SMS History</a></li>
+            <li><a href="#menualsms_configuration" title="SMSGlobal Configuration">Send Manual SMS</a></li>
+            <li><a href="#bulksms_configuration" title="SMSGlobal Configuration">Send Bulk SMS</a></li>
+			<li><a href="#sources_credits" title="Sources & Credits">Sources & Credits</a></li>
+            
+		</ul>
+		<div id="documenter_copyright">Copyright Repute Infosystems 2016<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>SMS Notification for WooCommerce ( Version: 1.0 )</h1>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 14/12/2016</li>
+	<li>by: Repute Infosystems</li>
+	<li>email: <a href="mailto:info@reputeinfosystems.com">info@reputeinfosystems.com</a></li>
+	</ul>
+    
+
+	<p><strong>SMS Notification for WooCommerce</strong> plugin sends SMS updates to both admin and customers while placing order with your website. SMS Notification for WooCommerce is just another wordpress plugin which you can install and manage just like other wordpress plugins.<br><br>
+
+SMS Notification for WooCommerce plugin integrates your order and Nofication with SMS into a single process. You can send SMS to administrator as well as customers immediately after placing Order with your shop via woo commerce.
+</p>
+	</section>
+	
+	<section id="key_features">
+	<div class="page-header"><h3>Key Features</h3><hr class="notop"></div>
+<ul>
+	<li>
+    	<strong>Send SMS to customers and site administrator immediately after placing order with your website.</strong></li>
+    <li>
+    	<strong>Send SMS notification everytime while update of order status.</strong></li>    
+	<li>
+		<strong>Each order status has its own notification message.</strong></li>
+    <li>
+		<strong>Three major SMS Gateway Supported - Twilio, Clickatell, Nexmo</strong></li>
+    <li>
+		<strong>Facility to view complete SMS history along with its status.</strong></li>    
+	<li>
+		<strong>Facility to send Manual SMS. - Send SMS anybody even who is not part of your site</strong></li>
+    <li>
+		<strong>Send Bulk SMS</strong></li>
+</ul>
+</section>
+<section id="requirements">
+	<div class="page-header"><h3>Requirements</h3><hr class="notop"></div>
+<ul>
+	<li>
+		<strong>PHP version 5.2.4 or greater</strong></li>
+	<li>
+		<strong>WordPress 3.5 or greater</strong></li>
+	<li>
+		<strong>WooCommerce 2.0.20 or higher</strong></li>
+</ul>
+</section>
+<section id="installation_and_activation">
+	<div class="page-header"><h3>Installation And Activation</h3><hr class="notop"></div>
+<p>
+	You can install plugin either of these two methods.</p>
+<p style="margin-left:36.0pt;">
+	1) New install via FTP</p>
+<p style="margin-left:36.0pt;">
+	a. Download the plugin from CodeCanyon, and extract it. You should find a directory <strong>reputesms</strong>.<br>
+	b. In your WordPress installation, upload <strong>reputesms</strong> to wp-content/plugins/<br>
+	c. Activate the <strong>&quot;SMS Notification for WooCommerce&quot;</strong> plugin through the <strong>Plugins</strong> menu from WordPress admin panel.</p>
+<p style="margin-left:36.0pt;">
+	2) New install via the WordPress Uploader</p>
+<p style="margin-left:36.0pt;">
+	a. Download the plugin from CodeCanyon<br>
+	b. Log in to your WordPress admin panel<br>
+	c. go to Plugins -&gt; Add New -&gt; Upload<br>
+	d. Click on choose file and browse the download package from CodeCanyon. When the plugin uploads successfully, click on Activate Plugin link.</p>
+<p style="margin-left:36.0pt;">
+	After activating the plugin, Go to "WooCommerce" and then go to "Settings" page. You will see SMS settings under "SMS NOTIFICATION" settings.
+</p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_GeneralSettings.png" title="WooCommerce SMS Configuration 1" alt="WooCommerce SMS Configuration 1" width="800" /></p>
+    
+<p style="margin-left:36.0pt;">&nbsp;
+	</p>
+<p style="margin-left:36.0pt;">&nbsp;
+	</p>
+</section>
+<section id="sms_configuration">
+	<div class="page-header"><h3>SMS Configuration</h3><hr class="notop"></div>
+<p style="margin-left:36.0pt;">
+	Configuration for SMS will take just 5 minutes with WooCommerce.</p>
+<p style="margin-left:36.0pt;">
+	To configure SMS settings, Please Go to <strong>Settings</strong> => <strong>SMS NOTIFICATION</strong>.</p>
+
+<p style="margin-left:36.0pt;">
+	in "General Settings" section <strong>you will get Opt-in checkbox label</strong> which will show text on the checkout page of your website. You can also decide that you want to check that checkbox defaultly or not.
+</p>
+
+<!--<p style="margin-left:36.0pt;">
+	by enable <strong>Shortern URLs</strong>, links in SMS text will show as shorten link with <a href="http://goo.gl" target="_blank">Google URL Shortener</a>. <strong>(goo.gl)</strong>
+</p>
+-->
+<p style="margin-left:36.0pt;">
+	with <strong>Debug Errors</strong>, Debug any errors which is generated from SMS gateway. We recommended for best performance, please only enable this option if you experience any issue with the configuration.
+</p>
+
+<p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_general_settings_fields.png" title="WooCommerce SMS - General Settings" alt="WooCommerce SMS - General Settings" width="800" /></p>
+
+<p style="margin-left:36.0pt;">
+	<strong>SMS Notification Settings for Administrator:</strong> You can also enable/disable to notify site administrator as well as customers. If you want to send notification to site administrator, you just need to enter Administrator's phone number and notification text. In phone number, Please add your country code and without including space and dash.
+</p>
+
+<p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_admin_notification_setting.png" title="WooCommerce SMS - Admin Notification Setting" alt="WooCommerce SMS - Admin Notification Setting" width="800" /></p>
+
+<p style="margin-left:36.0pt;">&nbsp;
+	</p>
+    
+<p style="margin-left:36.0pt;">
+	<strong>SMS Notification Settings for Customers:</strong> Send SMS updates to your customers while placing new order with your website as well as when their order status is updated, Customer will be notified only if they have selected to get SMS Updates on checkout page and entered their Billing Phone number.
+</p>
+
+<p style="margin-left:36.0pt;">
+	<strong>Status SMS Text</strong> You can manage each of woo-commerce order status' notification text.
+</p>
+<p style="margin-left:36.0pt;">
+    <b>Use Message Shortcode</b> - You can use shortcodes on SMS text. This will set value dynamically when SMS will be sent. you can user your site name, order number, order status, order account, order date, order items, billing first name, billing last name, billing email addresss, current date and time.
+</p>
+
+<p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_statuses_settings.png" title="WooCommerce SMS - Status Setting" alt="WooCommerce SMS - Status Setting" width="800" /></p>
+
+
+
+</section>
+
+<section id="sms_gateways">
+	<div class="page-header"><h3>SMS Gateways</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+		<strong> SMS Notification for WooCommerce</strong> supports three types of SMS gateways:
+    </p>
+    <ul style="margin-left:50.0pt;">
+		<li><a href="http://twilio.com/" target="_blank">Twilio SMS Gateway</a></li>
+        <li><a href="https://www.clickatell.com/" target="_blank">Clickatell SMS Gateway</a></li>
+       	<li><a href="https://nexmo.com/" target="_blank">Nexmo SMS Gateway</a></li>
+       <!-- <li><a href="http://smsglobal.com/" target="_blank">SMS Global SMS Gateway</a></li> -->
+    </ul>
+</section>
+
+
+<section id="twilio_configuration">
+	<div class="page-header"><h3>Twilio Configuration</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+		<strong>Twilio SMS Configuration</strong>
+    </p>
+    <p style="margin-left:50.0pt;">
+    	To send SMS with Twilio, you need to configure your account with this plugin. Get your required details from <a href="https://www.twilio.com/user/account" target="_blank">Twilio</a> and enter the <strong>Twilio Account SID</strong>, <strong>Twilio Authentication Token</strong> and <strong>Twilio From Number</strong> into the text boxes on the twilio settings.
+    </p>
+    <p style="margin-left:50.0pt;">&nbsp;</p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_twilio_settings.png" title="WooCommerce SMS - Twilio Settings" alt="WooCommerce SMS - Twilio Settings" width="800" /></p>
+</section>
+
+
+
+<section id="clickatell_configuration">
+	<div class="page-header"><h3>Clickatell Configuration</h3><hr class="notop"></div>
+    <p style="margin-left:36.0pt;">
+		<strong>Clickatell SMS Configuration</strong>
+    </p>
+    <p style="margin-left:50.0pt;">
+    	To send SMS with Clickatell, you need to configure your account with this plugin. Get your required details from <a href="https://www.clickatell.com/login/" target="_blank">Clickatell</a> enter the <strong>Clickatell Username</strong>, <strong>Clickatell Password</strong>, <strong>Clickatell API ID</strong> and <strong>Clickatell From Name</strong> into the text boxes on the Clikatell settings.
+    </p>
+    <p style="margin-left:50.0pt;">&nbsp;</p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_clickatell_settings.png" title="WooCommerce SMS - Clickatell Settings" alt="WooCommerce SMS - Clickatell Settings" width="800" /></p>
+</section>
+
+
+
+<section id="nexmo_configuration">
+	<div class="page-header"><h3>Nexmo Configuration</h3><hr class="notop"></div>
+    <p style="margin-left:36.0pt;">
+		<strong>Nexmo SMS Configuration</strong>
+    </p>
+     <p style="margin-left:50.0pt;">
+    	To send SMS with Nexmo, you need to configure your account with this plugin. Get your required details from <a href="https://dashboard.nexmo.com/login/" target="_blank">Nexmo</a> enter the <strong>Nexmo API Key</strong>, <strong>Nexmo API Secret</strong> and <strong>Nexmo From Name</strong> into the text boxes on the Nexmo settings.
+    </p>
+    <p style="margin-left:50.0pt;">&nbsp;</p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_nexmo_settings.png" title="WooCommerce SMS - Nexmo Settings" alt="WooCommerce SMS - Nexmo Settings" width="800" /></p>
+</section>
+
+
+
+<!--<section id="smsglobal_configuration">
+	<div class="page-header"><h3>SMSGlobal Configuration</h3><hr class="notop"></div>
+    <p style="margin-left:36.0pt;">
+		<strong>SMSGlobal SMS Configuration</strong>
+    </p>
+    <p style="margin-left:50.0pt;">
+    	To send SMS with SMSGlobal, you need to configure your account with this plugin. Get your required details from <a href="https://mxt.smsglobal.com/login/" target="_blank">SMSGlobal</a>  and enter the <strong>SMSGlobal Username</strong>, <strong>SMSGlobal Password</strong> and <strong>SMSGlobal Sender ID</strong> into the text boxes on the SMSGlobal settings.
+    </p>
+    <p style="margin-left:50.0pt;">&nbsp;</p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_smsglobal_settings.png" title="WooCommerce SMS - SMSGlobal Settings" alt="WooCommerce SMS - SMSGlobal Settings" width="800" /></p>
+</section>-->
+
+<section id="view_sms_history">
+	<div class="page-header"><h3>View SMS History</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+		<strong>SMS Notification for WooCommerce</strong> plugin also provides facility to view complete history of sent SMS along with its status from your site.
+        </p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_view_sms_history.png" title="WooCommerce SMS - View SMS History" alt="WooCommerce SMS - View SMS History" width="800" /></p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_view_sms_history_box.png" title="WooCommerce SMS - View SMS History" alt="WooCommerce SMS - View SMS History" width="800" /></p>
+    
+</section>
+
+<section id="menualsms_configuration">
+	<div class="page-header"><h3>Send Manual SMS</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+		<strong>SMS Notification for WooCommerce</strong> plugin also provides facility you to test your own configuration with custom SMS text from <b>selected SMS Gateway</b>. You can send SMS to anybody even who are not part of your website.
+    </p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_manual_sms_settings.png" title="WooCommerce SMS - Send Manual SMS" alt="WooCommerce SMS - Send Manual SMS" width="800" /></p>
+</section>
+
+
+<section id="bulksms_configuration">
+	<div class="page-header"><h3>Send Bulk SMS</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+		<strong>SMS Notification for WooCommerce</strong> plugin provides facility you to Send <b>BULK SMS</b> from <b>selected SMS Gateway</b>. It will send SMS to those users who has placed order with your site.Users will be notified only if he checked for SMS notification from frontend checkout page</b>. You can use this feature for advertise your shop, can notify for new products or product on sale, can send Promo or Coupon codes etc.
+    </p>
+    <p style="margin-left:36.0pt;"><img src="assets/css/img/ReputeSMS_bulk_sms_settings.png" title="WooCommerce SMS - Send Bulk SMS" alt="WooCommerce SMS - Send Bulk SMS" width="800" /></p>
+</section>
+
+<section id="sources_credits">
+	<div class="page-header"><h3>Sources & Credits</h3><hr class="notop"></div>
+	<p style="margin-left:36.0pt;">
+        <ul id="documenter_nav">
+			<li><a href="https://www.twilio.com/" target="_blank">Twilio</a></li>
+			<li><a href="https://www.clickatell.com/" target="_blank">Clickatell</a></li>
+            <li><a href="https://www.nexmo.com/" target="_blank">Nexmo</a></li>
+          <!--  <li><a href="http://www.smsglobal.com/" target="_blank">SMSGlobal</a></li>-->
+		</ul>
+        
+    </p>
+</section>
+
+	</div>
+</body>
+</html>
